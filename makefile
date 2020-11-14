@@ -24,7 +24,7 @@ OBJEXT      := o
 
 CFLAGS      := $(DEVELOPMENT) -Wall -Wno-unknown-pragmas
 LIB         := -L /usr/local/lib $(PTHREAD) $(MATH) $(OPENSSL) $(CMONGO)
-INC         := -I $(INCDIR) -I /usr/local/include $(CMONGO_INC) $(CERVER_INC)
+INC         := -I $(INCDIR) -I /usr/local/include $(CMONGO_INC)
 INCDEP      := -I $(INCDIR)
 
 SOURCES     := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
